@@ -23,7 +23,7 @@ public class Guitest extends Application {
 
     // Parameters
     private static int maxEntity = 200, capSpeed = 5, maxSize = 20;
-    private Paint[] colorGame = {Color.BLUE, Color.RED, Color.ORANGE, Color.AQUA, Color.BEIGE, Color.MAGENTA};
+    private Paint[] colorGame = {Color.BLUE, Color.RED, Color.ORANGE};
 
     // Various class variables and constants
     private Pane root = new Pane();
@@ -135,7 +135,7 @@ public class Guitest extends Application {
                                                 circles[i].setColor(circles[id].getColor());
                                             }
                                         }
-                                        if((circles[id].team-1)%colorGame.length == circles[i].team){
+                                        if((((circles[id].team-1)%colorGame.length)+colorGame.length)%colorGame.length == circles[i].team){
                                             
                                             if(agario){
                                                 agarioCollision(circles[id],circles[i],i);
@@ -281,9 +281,9 @@ public class Guitest extends Application {
         int scores[] = new int[colorGame.length];
         Timeline timeline = new Timeline(
             new KeyFrame(Duration.seconds(0.030), event -> {
-                for (int i = 0; i < scores.length; i++) {
+                for (int i = 0; i < scores.length; i++)
                     scores[i] = 0;
-                }
+                
                 for (CircleGame circl : circles) {
                     if(circl != null){
                         scores[circl.team]++;
