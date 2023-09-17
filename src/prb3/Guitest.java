@@ -22,7 +22,7 @@ import java.util.Random;
 public class Guitest extends Application {
 
     // Parameters
-    private static int maxEntity = 200, capSpeed = 5, maxSize = 20;
+    final static int maxEntity = 200, capSpeed = 5, maxSize = 20;
     private Paint[] colorGame = {Color.BLUE, Color.RED, Color.ORANGE};
 
     // Various class variables and constants
