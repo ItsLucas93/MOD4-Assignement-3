@@ -1,6 +1,7 @@
 {
     "java.project.sourcePaths": [
-        "src/prb3"
+        "src/*",
+        "src"
     ],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
