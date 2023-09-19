@@ -1,4 +1,4 @@
-package AverageOfOddAndEvenNumbers;
+package src.AverageOfOddAndEvenNumbers;
 
 import java.util.Random;
 import java.util.Scanner;

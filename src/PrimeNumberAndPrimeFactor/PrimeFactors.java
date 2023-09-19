@@ -1,4 +1,4 @@
-package PrimeNumberAndPrimeFactor;
+package src.PrimeNumberAndPrimeFactor;
 
 import java.util.HashSet;
 import java.util.Set;
